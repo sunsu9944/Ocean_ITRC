@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/row_result_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="40dp"
+                android:textColor="@color/black"
+                android:text="101"
+                android:textSize="8pt"
+                android:fontFamily="@font/nanummyeongjoextrabold"
+                android:gravity="center"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/row_result_title"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:textSize="7pt"
+                        android:maxLines="2"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/nanummyeongjoextrabold"
+                        android:text="어구 자동식별 부이를 이용한 어구 모니터링 시스템 개발 및 관제 센터 구축 기획연"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/row_result_date"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanummyeongjoextrabold"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:minWidth="150dp"
+                            android:text="2015-10-01 ~ 2016-03-31"/>
+
+                        <TextView
+                            android:id="@+id/row_result_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="고학림eeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+                            android:maxWidth="150dp"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/nanummyeongjoextrabold"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/row_result_textcontent"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:maxLines="3"
+            android:text="국내외 어구 모니터링 시스템 기술의 개발현황 조사 분석"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+
+</LinearLayout>

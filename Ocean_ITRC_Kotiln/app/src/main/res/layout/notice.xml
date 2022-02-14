@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/speaker"
+        ></ImageView>
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/notice_content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="첫번째로 테스트하고 있는 레이아웃 입니다."
+            android:textSize="15dp"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanummyeongjobold"
+            android:ellipsize="end"
+        ></TextView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="bottom"
+        android:background="@color/black"></View>
+
+    <Button
+        android:id="@+id/notice_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"></Button>
+
+</FrameLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/recent_continue_count_row"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recent_continue_name_row"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:layout_marginStart="40dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="111"
+        app:layout_constraintWidth_percent="0.1"
+        android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:fontFamily="@font/nanummyeongjobold"
+        />
+
+    <TextView
+        android:id="@+id/recent_continue_name_row"
+        app:layout_constraintStart_toEndOf="@id/recent_continue_count_row"
+        app:layout_constraintEnd_toStartOf="@id/recent_continue_date_row"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:maxLines="2"
+        app:layout_constraintWidth_percent="0.45"
+        android:text="해양 it 논문명이 들어 갈 곳입니다. 좀더 많은 "
+        android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/nanummyeongjobold"/>
+
+    <TextView
+        app:layout_constraintStart_toEndOf="@id/recent_continue_name_row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recent_continue_count_row"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:id="@+id/recent_continue_date_row"
+        android:layout_marginEnd="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020.08.01"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        android:fontFamily="@font/nanummyeongjobold"
+        />
+
+    <View
+        android:id="@+id/recent_continue_saperlate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintVertical_bias="1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#BFBFBF"
+        ></View>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
